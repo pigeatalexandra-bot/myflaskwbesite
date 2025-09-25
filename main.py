@@ -11,5 +11,8 @@ def index():
 def titi():
     return "J'aime le code"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+@app.route('/toto')
+def toto():
+    return "New page"
+
+app.run(debug=True)
